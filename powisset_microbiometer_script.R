@@ -13,9 +13,9 @@ ggplot(powmicro, aes(x = factor(distance_from_hedgerow_ft), y = microbes_ugC_per
     title = "How Microbe Density Changes with Distance from Hedgerow"
   )
 
-#this box plot shows how microbe density changes with distance from the hedgerow, and is divided by hedgerow type
+#edit graph titles
 ggplot(powmicro, aes(x = factor(distance_from_hedgerow_ft), y = microbes_ugC_per_gsoil))+
-  geom_boxplot() +
+  geom_point(aes(color = sample_depth_cm)) +
   facet_wrap(~hedgerow) +
   labs(
     y = "Microbes (ugC/g soil)", x = "Distance from Hedgerow (ft)",
