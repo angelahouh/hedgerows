@@ -51,4 +51,4 @@ ggplot(powmicro, aes(x = factor(sampling_layer), y = Bacterial_percent)) +
     y = "Bacterial Percent", x = "Sample Depth"
   )
 
-  )
+  
